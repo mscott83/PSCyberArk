@@ -21,16 +21,16 @@ Import-Module PSCyberArk -Force
 ## CmdLets
 
 ### Authentication
-*Connect-CyberArkUser
-*Disconnect-CyberArkUser
+* Connect-CyberArkUser
+* Disconnect-CyberArkUser
 
 ### Safe Operations
-*Add-CyberArkSafe
-*Remove-CyberArkSafe
-*Get-CyberArkSafe
-*Search-CyberArkSafe
+* Add-CyberArkSafe
+* Remove-CyberArkSafe
+* Get-CyberArkSafe
+* Search-CyberArkSafe
 
 ### Account Operations
-*Add-CyberArkAccount
-*Edit-CyberArkAccount
-*Remove-CyberArkAccount
+* Add-CyberArkAccount
+* Edit-CyberArkAccount
+* Remove-CyberArkAccount
