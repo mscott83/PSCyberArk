@@ -1,6 +1,5 @@
 # PSCyberArk
 
-
 ## Installation
 
 1. Clone this repository to your user profile:
@@ -21,6 +20,17 @@ Import-Module PSCyberArk -Force
 
 ## CmdLets
 
+### Authentication
+*Connect-CyberArkUser
+*Disconnect-CyberArkUser
+
 ### Safe Operations
-Add-CyberArkSafe
-Remove-CyberArkSafe
+*Add-CyberArkSafe
+*Remove-CyberArkSafe
+*Get-CyberArkSafe
+*Search-CyberArkSafe
+
+### Account Operations
+*Add-CyberArkAccount
+*Edit-CyberArkAccount
+*Remove-CyberArkAccount
