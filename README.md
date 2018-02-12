@@ -34,3 +34,15 @@ Import-Module PSCyberArk -Force
 * Add-CyberArkAccount
 * Edit-CyberArkAccount
 * Remove-CyberArkAccount
+
+## Usage
+
+### CmdLet Help
+
+All CmdLets have been configured with help documentation, including explanations of the mandatory and optional parameters as well as examples. To access CmdLet help, run the following:
+
+Get-Help <CmdLet name>
+e.g.
+Get-Help Connect-CyberArkUser
+
+### Piping CmdLets

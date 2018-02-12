@@ -1,12 +1,11 @@
 function Get-CyberArkAccountDetails{
 <#
 .SYNOPSIS
-Function to retrieve details of an account stored in the CyberArk Vault
+Function to retrieve details of an account stored in the CyberArk Vault.
 .DESCRIPTION
-Function to retrieve details of an account stored in the CyberArk Vault
+Function to retrieve details of an account stored in the CyberArk Vault. This CmdLet will only retireve the full details of one account, even if multiple accounts are found by the Vault search function.
 .EXAMPLE
 Get-CyberArkAccountDetails -Target components.cyber.internal -AuthenticationToken abc123 -
-
 .PARAMETER target
 The computer hostname of the PVWA hosting the CyberArk Rest API.
 .PARAMETER AuthenticationToken
@@ -31,7 +30,7 @@ PROCESS{
 
   #$result = ConvertFrom-JSON $result
 
-  write-output $result.accounts[0].AccountID
+  write-output $result.accounts
 }
 
 }
