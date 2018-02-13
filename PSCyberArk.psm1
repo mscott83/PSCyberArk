@@ -1,5 +1,6 @@
 # Dot sourcing public function files
-Get-ChildItem ./public -Recurse -Filter "*.ps1" -File | Foreach {
+Write-Verbose "$((get-location).path)\public"
+Get-ChildItem -path  "$((get-location).path)\public" -Recurse -Filter "*.ps1" -File | Foreach {
     write-verbose $_.FullName
     . $_.FullName
 
@@ -9,3 +10,5 @@ Get-ChildItem ./public -Recurse -Filter "*.ps1" -File | Foreach {
         Export-ModuleMember $_.Name
     }
 }
+
+#"$((get-location).path)\public"
