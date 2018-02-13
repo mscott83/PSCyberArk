@@ -56,7 +56,6 @@ param(
                                                                                   groupPlatformID=$GroupPlatformID
                                                                                   }
 
-
      $JSON = $Account | ConvertTo-Json
 
      Write-Host $JSON

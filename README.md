@@ -34,6 +34,8 @@ Import-Module PSCyberArk -Force
 * Add-CyberArkAccount
 * Edit-CyberArkAccount
 * Remove-CyberArkAccount
+* Reset-CyberArkCredentials
+* Verify-CyberArkCredentials
 
 ## Usage
 
@@ -46,3 +48,7 @@ e.g.
 Get-Help Connect-CyberArkUser
 
 ### Piping CmdLets
+
+All CmdLets should accept pipeline input where appropriate, either from system CmdLets or from other PSCyberArk CmdLets. So the following examples should be possible:
+
+* Pipeline import from CSV: Import-CSV .\Safes.csv | Add-CyberArkSafe -target $target -AuthenticationCode $authcode

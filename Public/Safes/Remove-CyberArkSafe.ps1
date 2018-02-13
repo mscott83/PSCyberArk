@@ -14,14 +14,12 @@ function Remove-CyberArkSafe{
   .PARAMETER SafeName
   The name of the new safe to be created. Maximum length 28 characters
   #>
-
 [CmdletBinding()]
     param(
         [parameter(Mandatory=$true)][string]$Target,
         [parameter(Mandatory=$true)][string]$AuthenticationToken,
         [parameter(Mandatory=$true,ValueFromPipeline=$true,ValueFromPipelinebyPropertyName=$true)][ValidateLength(1,28)][string]$SafeName
         )
-
 
         PROCESS{
 
