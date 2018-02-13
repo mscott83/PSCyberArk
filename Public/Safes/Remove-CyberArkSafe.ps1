@@ -16,8 +16,8 @@ function Remove-CyberArkSafe{
   #>
 [CmdletBinding()]
     param(
-        [parameter(Mandatory=$true)][string]$Target,
-        [parameter(Mandatory=$true)][string]$AuthenticationToken,
+        [parameter(Mandatory=$true,ValueFromPipeline=$true,ValueFromPipelinebyPropertyName=$true)][string]$Target,
+        [parameter(Mandatory=$true,ValueFromPipeline=$true,ValueFromPipelinebyPropertyName=$true)][string]$AuthenticationToken,
         [parameter(Mandatory=$true,ValueFromPipeline=$true,ValueFromPipelinebyPropertyName=$true)][ValidateLength(1,28)][string]$SafeName
         )
 
